@@ -1,10 +1,7 @@
 <?php
-include_once('config/config.php');
+ include("includes/header.php");
+ 
 ?>
-<html>
-<head>
-    <title>swirlfeed</title>
-</head>
 <body>
 Hello nim!!!!
 </body>
