@@ -11,7 +11,7 @@ class User {
 
   public function getUsername() {
     return $this->user['username'];
-  }
+  } 
 
   public function getNumPosts() {
     $username = $this->user['username'];
@@ -36,6 +36,17 @@ class User {
       return true;
     else
       return false;
+  }
+
+  public function isFriend($username_to_check) {
+    $usernameComma = "," . $username_to_check . ",";
+    if((strstr($this->user['friend_array'], $usernameComma) || $username_to_check == $this->user['username'])) {
+       return true;
+    }
+    else {
+      return false;
+    }
+    
   }
 }
 ?>

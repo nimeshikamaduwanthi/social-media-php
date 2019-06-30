@@ -40,7 +40,7 @@ if(isset($_POST['register_button'])){
     $password = strip_tags($_POST['reg_password']); //remove html tags
     $password2 = strip_tags($_POST['reg_password2']); //remove html tags
 
-    $date = date("y-m-d"); //current date
+    $date = date("Y-m-d"); //current date
 
     if($em == $em2) {
         //check if email is in valid format
